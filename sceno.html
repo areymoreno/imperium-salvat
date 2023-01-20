@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escenografía - Warhammer Imperium</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <style type="text/css">
+    a:link,
+    a:visited,
+    a:active {
+      text-decoration: none;
+    }
+  </style>
+
+  <header>
+    <div class="px-3 py-2 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <span class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+            <img src="images/logo-40K.png" width="150px" />
+          </span>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li><a href="index.html" class="nav-link text-white">Inicio</a></li>
+            <li><a href="table.html" class="nav-link text-white">Tabla de Envíos</a></li>
+            <li><a href="premium.html" class="nav-link text-white">Kit Premium</a></li>
+            <li><a href="gifts.html" class="nav-link text-white">Regalos</a></li>
+            <li><a href="notes.html" class="nav-link text-white">Actualizaciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <section class="container" style="margin-top: 15px; margin-bottom: 250px;">
+
+    <div id="troopsDetailed" class="text-center" style="align-content: center; padding-bottom: 10px;">
+        <p>Desglose: </p>
+        <a href="paints.html" title="Pinturas"><img src="https://cdn-icons-png.flaticon.com/512/66/66246.png" width="32px" height="32px" style="margin:0px 5px 0px 5px;" /></a>
+        <a href="sceno.html" title="Escenografía"><img src="data:image/png;base64,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" width="32px" height="32px" style="margin:0px 5px 0px 5px;" /></a>
+        <a href="index.html" title="Todo"><img src="https://warhammerunderworlds-online.com/wp-content/uploads/2020/01/WH-icon-PNG-black.png" width="32px" height="32px" style="margin:0px 20px 0px 5px;" /></a>
+        <a href="necrons.html" title="Necrones"><img src="https://raw.githubusercontent.com/Warhammer40kGroup/wh40k-icon/c857da1962ca34fc0a135814e6f0fbd57a2babc6/src/svgs/Xenos/Necrons/necrons-dark.svg" width="32px" height="32px" style="margin:0px 5px 0px 5px;" /></a>
+        <a href="astartes.html" title="Ultramarines"><img src="https://raw.githubusercontent.com/Warhammer40kGroup/wh40k-icon/c857da1962ca34fc0a135814e6f0fbd57a2babc6/src/svgs/ultramarines.svg" width="32px" height="32px" style="margin:0px 5px 0px 5px;" /></a>
+        <a href="mechanicum.html" title="Adeptus Mechanicus"><img src="https://raw.githubusercontent.com/Warhammer40kGroup/wh40k-icon/c857da1962ca34fc0a135814e6f0fbd57a2babc6/src/svgs/adeptus-mechanicus.svg" width="32px" height="32px" style="margin:0px 5px 0px 5px;" /></a>
+        <a href="sororitas.html" title="Adepta Sororitas"><img src="https://raw.githubusercontent.com/Warhammer40kGroup/wh40k-icon/c857da1962ca34fc0a135814e6f0fbd57a2babc6/src/svgs/sisters-of-battle.svg" width="32px" height="32px" style="margin:0px 5px 0px 5px;" /></a>
+    </div>
+
+    <div class="row" style="justify-content: space-around;">
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E14.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 14</h5>
+              <p class="card-text">1x Munitorum Armoured Containers</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E17.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 17</h5>
+              <p class="card-text">1x Munitorum Armoured Containers</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E19.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 19</h5>
+              <p class="card-text">1x Munitorum Armoured Containers</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E27.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 27</h5>
+              <p class="card-text">1x Reactor Haemotrope</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E31.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 31</h5>
+              <p class="card-text">1x Ruinas del Command Edition Battlefield Expansion Set</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E34.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 34</h5>
+              <p class="card-text">1x Ruinas del Command Edition Battlefield Expansion Set</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E37.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 37</h5>
+              <p class="card-text">1x Tuberías del Command Edition Battlefield Expansion Set</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E44.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 44</h5>
+              <p class="card-text">1x Ruinas del Command Edition Battlefield Expansion Set</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E48.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 48</h5>
+              <p class="card-text">1x Ruinas del Command Edition Battlefield Expansion Set</p>
+            </div>
+            <span class="badge text-bg-success" style="margin-bottom: 10px;">Entregado</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+            <img src="images/E55.png" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Entrega Nº 55</h5>
+              <p class="card-text">1x Tuberías del Command Edition Battlefield Expansion Set</p>
+            </div>
+            <span class="badge text-bg-secondary" style="margin-bottom: 10px;">Sin entrega</span>
+        </div>
+
+        <div class="card" style="margin: 5px; width: 15.625rem;">
+          <img src="images/E75.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Entrega Nº 75</h5>
+            <p class="card-text">1x Reactor Haemotropo</p>
+          </div>
+          <span class="badge text-bg-secondary" style="margin-bottom: 10px;">Sin entrega</span>
+        </div>    
+    
+    </div>
+
+  </section>
+
+</body>
+
+<footer class="py-3 my-4">
+  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <li class="nav-item"><a href="https://github.com/areymoreno" class="nav-link text-white"
+        class="nav-link px-2 text-muted">Github</a></li>
+  </ul>
+  <p class="text-center text-muted">© 2022 Alberto Rey Moreno.</p>
+</footer>
+
+</html>
